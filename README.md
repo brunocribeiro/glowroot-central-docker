@@ -1,6 +1,6 @@
 Glowroot Central Collector Docker Image
 ==========
-[![License (LGPL version 3)](https://img.shields.io/badge/license-GNU%20LGPL%20version%203.0-green.svg?maxAge=2592000)](https://github.com/brunocesarsilva/glowroot-central-docker/blob/master/LICENCE)  [![](https://images.microbadger.com/badges/image/brunocesar/glowroot-central-docker.svg)](https://microbadger.com/images/brunocesarsilva/glowroot-central-docker "Badge by microbadger.com")
+[![License (LGPL version 3)](https://img.shields.io/badge/license-GNU%20LGPL%20version%203.0-green.svg?maxAge=2592000)](https://github.com/brunocesarsilva/glowroot-central-docker/blob/master/LICENCE)  [![](https://images.microbadger.com/badges/image/brunocesar/glowroot-central.svg)](https://microbadger.com/images/brunocesar/glowroot-central "Badge by microbadger.com")
 
 This is a simple image using [`openjdk:11-jre-slim`](https://hub.docker.com/_/openjdk/) as the base image of [Glowroot](https://glowroot.org/).
 
