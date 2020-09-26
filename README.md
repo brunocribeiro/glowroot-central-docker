@@ -1,12 +1,12 @@
 Glowroot Central Collector Docker Image
 ==========
-[![License (LGPL version 3)](https://img.shields.io/badge/license-GNU%20LGPL%20version%203.0-green.svg?maxAge=2592000)](https://github.com/brunocesar/glowroot-central/blob/master/LICENSE)  [![](https://images.microbadger.com/badges/image/brunocesar/glowroot-central.svg)](https://microbadger.com/images/brunocesar/glowroot-central "Badge by microbadger.com")
+[![License (LGPL version 3)](https://img.shields.io/badge/license-GNU%20LGPL%20version%203.0-green.svg?maxAge=2592000)](https://github.com/brunocesarsilva/glowroot-central-docker/blob/master/LICENCE)  [![](https://images.microbadger.com/badges/image/brunocesar/glowroot-central-docker.svg)](https://microbadger.com/images/brunocesarsilva/glowroot-central-docker "Badge by microbadger.com")
 
 This is a simple image using [`openjdk:11-jre-slim`](https://hub.docker.com/_/openjdk/) as the base image of [Glowroot](https://glowroot.org/).
 
 # Supported tags and respective `Dockerfile` links
 
-- `latest`, `0.13.6` [(Dockerfile)](https://github.com/brunocesar/glowroot-central/blob/0.13.6/Dockerfile)
+- `latest`, `0.13.6` [(Dockerfile)](https://github.com/brunocesarsilva/glowroot-central-docker/blob/0.13.6/Dockerfile)
 
 # How to use this image
 
@@ -69,4 +69,4 @@ See more about glowroot central collector configuration here: [Central Collector
 
 # License
 
-This project and its documentation are licensed under the LGPL license. Refer to [LICENCE](https://github.com/brunocesar/glowroot-central/blob/master/LICENCE) for more information.
+This project and its documentation are licensed under the LGPL license. Refer to [LICENCE](https://github.com/brunocesarsilva/glowroot-central-docker/blob/master/LICENCE) for more information.
