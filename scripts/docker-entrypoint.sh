@@ -32,6 +32,9 @@ file_env 'CASSANDRA_SYMMETRIC_ENCRYPTION_KEY'
 if [ "$CASSANDRA_CONTACT_POINTS" ]; then
   sed -i "s/^cassandra.contactPoints=.*$/cassandra.contactPoints=$CASSANDRA_CONTACT_POINTS/" /usr/share/glowroot-central/glowroot-central.properties
 fi
+if [ "$CASSANDRA_PORT" ]; then
+  sed -i "s/^cassandra.port=.*$/cassandra.port=$CASSANDRA_PORT/" /usr/share/glowroot-central/glowroot-central.properties
+fi
 if [ "$CASSANDRA_USERNAME" ]; then
   sed -i "s/^cassandra.username=.*$/cassandra.username=$CASSANDRA_USERNAME/" /usr/share/glowroot-central/glowroot-central.properties
 fi
