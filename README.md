@@ -2,18 +2,19 @@ Glowroot Central Collector Docker Image
 ==========
 [![License (LGPL version 3)](https://img.shields.io/badge/license-GNU%20LGPL%20version%203.0-green.svg?maxAge=2592000)](https://github.com/brunocesarsilva/glowroot-central-docker/blob/master/LICENCE)  [![](https://images.microbadger.com/badges/image/brunocesar/glowroot-central.svg)](https://microbadger.com/images/brunocesar/glowroot-central "Badge by microbadger.com")
 
-This is a simple image using [`openjdk:11-jre-slim`](https://hub.docker.com/_/openjdk/) as the base image of [Glowroot](https://glowroot.org/).
+This is a simple image using [`openjdk:17-slim`](https://hub.docker.com/_/openjdk/) as the base image for [Glowroot](https://glowroot.org/).
 
 # Supported tags and respective `Dockerfile` links
 
+- `0.14.0-beta.2` [(Dockerfile)](https://github.com/brunocesarsilva/glowroot-central-docker/blob/master/Dockerfile)
 - `latest`, `0.13.6` [(Dockerfile)](https://github.com/brunocesarsilva/glowroot-central-docker/blob/0.13.6/Dockerfile)
 
 # How to use this image
 
-The following ports may be published:
+The following ports may be mapped to the host:
 
-- 4000
-- 8181
+- 4000: central UI will be available at this port (ex.: http://localhost:4000)
+- 8181: central collector will listen for HTTP/2 connections from agents on this port
 
 You can create a container from this image running something like this:
 
