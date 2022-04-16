@@ -3,13 +3,13 @@
 # License: GNU Lesser General Public License (LGPL), version 3 or later
 # See the LICENSE file in the root directory or <http://www.gnu.org/licenses/lgpl-3.0.html>.
 
-FROM glowroot/glowroot-central:0.14.0-beta.2 AS builder
+FROM glowroot/glowroot-central:0.14.0-beta.3 AS builder
 
 LABEL autodelete="true"
 
 FROM openjdk:17-slim
 
-LABEL maintainer="Bruno Silva <bruno@brunocesar.com>"
+LABEL maintainer="Bruno Ribeiro <bruno@brunocesar.com>"
 
 ENV JAVA_OPTS="$JAVA_OPTS -XX:+UnlockExperimentalVMOptions -XX:+UseZGC "
 
