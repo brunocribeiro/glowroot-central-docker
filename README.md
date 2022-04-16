@@ -1,20 +1,21 @@
 Glowroot Central Collector Docker Image
 ==========
-[![License (LGPL version 3)](https://img.shields.io/badge/license-GNU%20LGPL%20version%203.0-green.svg?maxAge=2592000)](https://github.com/brunocesarsilva/glowroot-central-docker/blob/master/LICENCE)  [![](https://images.microbadger.com/badges/image/brunocesar/glowroot-central.svg)](https://microbadger.com/images/brunocesar/glowroot-central "Badge by microbadger.com")
+[![License (LGPL version 3)](https://img.shields.io/badge/license-GNU%20LGPL%20version%203.0-green.svg?maxAge=2592000)](https://github.com/brunocesarsilva/glowroot-central-docker/blob/main/LICENCE)  [![](https://images.microbadger.com/badges/image/brunocesar/glowroot-central.svg)](https://microbadger.com/images/brunocesar/glowroot-central "Badge by microbadger.com")
 
 This is a simple image using [`openjdk:17-slim`](https://hub.docker.com/_/openjdk/) as the base image for [Glowroot](https://glowroot.org/).
 
 # Supported tags and respective `Dockerfile` links
 
-- `0.14.0-beta.2` [(Dockerfile)](https://github.com/brunocesarsilva/glowroot-central-docker/blob/master/Dockerfile)
-- `latest`, `0.13.6` [(Dockerfile)](https://github.com/brunocesarsilva/glowroot-central-docker/blob/0.13.6/Dockerfile)
+- `latest`, `0.14.0-beta.3` [(Dockerfile)](https://github.com/brunocesarsilva/glowroot-central-docker/blob/main/Dockerfile)
+- `0.14.0-beta.2` [(Dockerfile)](https://github.com/brunocesarsilva/glowroot-central-docker/blob/0.14.0-beta.2/Dockerfile)
+- `0.13.6` [(Dockerfile)](https://github.com/brunocesarsilva/glowroot-central-docker/blob/0.13.6/Dockerfile)
 
 # How to use this image
 
 The following ports may be mapped to the host:
 
-- 4000: central UI will be available at this port (ex.: http://localhost:4000)
-- 8181: central collector will listen for HTTP/2 connections from agents on this port
+- `4000`: central UI will be available at this port (ex.: http://localhost:4000)
+- `8181`: central collector will listen for HTTP/2 connections from agents on this port
 
 You can create a container from this image running something like this:
 
@@ -28,7 +29,7 @@ docker run -d --rm --name glowroot_central \
       brunocesar/glowroot-central
 ```
 
-You can configure the in many ways, although is not our goal support every possible configuration use case, here are just a few that might be useful.
+You can configure it in many ways, but it is not our goal to support every possible configuration use case. The following is just a few options that might be useful.
 
 ## Environment Variables:
 
@@ -70,4 +71,4 @@ See more about glowroot central collector configuration here: [Central Collector
 
 # License
 
-This project and its documentation are licensed under the LGPL license. Refer to [LICENCE](https://github.com/brunocesarsilva/glowroot-central-docker/blob/master/LICENCE) for more information.
+This project and its documentation are licensed under the LGPL license. Refer to [LICENCE](https://github.com/brunocesarsilva/glowroot-central-docker/blob/main/LICENCE) for more information.
